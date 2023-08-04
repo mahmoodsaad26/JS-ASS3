@@ -1,0 +1,76 @@
+body{
+    background-color: #F7ECDE;
+}
+
+
+hr{
+        border-top: 2px dotted black;
+    
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 3rem;
+    display: inline-block;
+}
+ h1::after{
+    content: "";
+    width: 16rem;
+    height: 1rem;
+    background-color: #FEC260;
+    position: absolute;
+    left: 50;
+    bottom: 0;
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: all .5s;
+ }
+
+ h1:hover::after{
+    height: 2.5rem;
+ }
+
+ .inputs h3{
+    background: linear-gradient(to right, #3DA55B,#BB4120);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .inputs .btn{
+    background-color: #BB4120;
+ }
+ #demo .form-control:focus{
+   box-shadow: 0 0 0 0.0rem ;
+}
+
+#lightBoxContainer{
+   background-color: rgba(0, 0, 0, .8);
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   
+}
+
+#light{
+   width: 35%;
+   height: 35%;
+}
+#dots span{
+   width: 1.5rem;
+   height: 1.5rem;
+   display: block;
+}
+
+#light p{
+   font-size: 1.5rem;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 400;
+}
+#caption i{
+   color: #BB4120;
+}
+#close{
+   cursor: pointer;
+}
